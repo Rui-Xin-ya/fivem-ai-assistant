@@ -1,4 +1,6 @@
-Config = {}
+-- 作者: NPCcxc
+
+Config = {}    
 
 Config.AI = {
     Provider = "volces",
