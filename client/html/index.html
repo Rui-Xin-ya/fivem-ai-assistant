@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh" style="background-color: transparent !important; margin: 0; padding: 0; overflow: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiveM AI 助手</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        html, body {
+            background-color: transparent !important;
+            background-image: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: hidden !important;
+        }
+    </style>
+</head>
+<body style="background-color: transparent !important; margin: 0; padding: 0; overflow: hidden;">
+    <div id="chat-container" class="hidden">
+        <div id="chat-header">
+            <div class="ai-avatar-container">
+                <div class="avatar-wrapper header-avatar">
+                    <img id="ai-avatar" src="https://i.imgur.com/YOJjZlW.png" alt="AI头像" class="loading">
+                    <div class="avatar-placeholder" style="display: none;">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                </div>
+                <div class="status-indicator online"></div>
+            </div>
+            <div id="ai-name">AI助手</div>
+            <div class="header-buttons">
+                <button id="bind-qq-button" class="icon-button" title="绑定QQ头像"><i class="fab fa-qq"></i></button>
+                <button id="close-button" class="icon-button"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+
+        <div id="chat-messages">
+            <div class="welcome-message">
+                <div class="welcome-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="welcome-text">
+                    <h3>欢迎使用 FiveM AI 助手</h3>
+                    <p>我可以回答问题、提供建议或者只是聊天。请输入你的问题！</p>
+                </div>
+            </div>
+
+            <div id="typing-indicator" class="hidden">
+                <div class="typing-bubble"></div>
+                <div class="typing-bubble"></div>
+                <div class="typing-bubble"></div>
+            </div>
+        </div>
+
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="输入消息...">
+            <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <div id="qq-bind-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>绑定QQ头像</h3>
+                <button id="close-modal-button" class="icon-button"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>请输入您的QQ号，系统将自动获取您的QQ头像</p>
+                <div class="input-group">
+                    <label for="qq-number">QQ号码：</label>
+                    <input type="text" id="qq-number" placeholder="请输入QQ号码">
+                </div>
+                <div class="preview-container hidden">
+                    <p>头像预览：</p>
+                    <div class="avatar-preview">
+                        <img id="qq-avatar-preview" src="" alt="QQ头像预览">
+                        <div class="avatar-placeholder">
+                            <i class="fab fa-qq"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="preview-button" class="secondary-button">预览头像</button>
+                <button id="confirm-bind-button" class="primary-button">确认绑定</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
