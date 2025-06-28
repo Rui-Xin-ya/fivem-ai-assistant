@@ -1,6 +1,6 @@
 # fivem-ai-assistant
 
-fivem的AI助手可以让你的服务器接入deepseek或者其他AI
+fivem的AI助手可以让你的服务器接入deepseek或者其他AI,支持用户绑定QQ头像
 
 ![游戏截图](https://i.ibb.co/V083PBWX/2d92fe97-a439-479c-ad51-d03e5330ed84.png)
 
