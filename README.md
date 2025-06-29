@@ -64,14 +64,15 @@ Discord:1200074512536965180
 
 QQ:3438341186
 
-本项目采用 [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/) 许可证。  
+##   许可证说明
+**本项目采用CC BY-NC 4.0许可证**
 
-### 许可证说明
-✅ 允许个人使用  
-✅ 允许修改  
-✅ 允许分发  
-❗ 禁止商业使用  
-❗ 必须保留原始版权声明  
-
-### 商业使用许可
+✅ 允许个人使用 - 可以自由下载和使用
+✅ 允许修改 - 可以修改、改进和定制
+✅ 允许分发 - 可以分享给他人使用
+❗ 禁止商业使用 - 不得用于商业目的或盈利活动
+❗ 必须保留原始版权声明 - 使用时必须注明原作者NPCcxc
+商业使用许可
 如需商业使用，请联系项目维护者获取单独许可。
+
+完整许可证文本： https://creativecommons.org/licenses/by-nc/4.0/legalcode
