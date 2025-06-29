@@ -64,15 +64,14 @@ Discord:1200074512536965180
 
 QQ:3438341186
 
-## 📄 许可证
-
-本项目采用 GPL v3 许可证。
+本项目采用 [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/) 许可证。  
 
 ### 许可证说明
+✅ 允许个人使用  
+✅ 允许修改  
+✅ 允许分发  
+❗ 禁止商业使用  
+❗ 必须保留原始版权声明  
 
-- ✅ 允许修改
-- ✅ 允许分发
-- ✅ 允许私人使用
-- ❗ 修改后必须开源
-- ❗ 必须保留版权声明
-- ❗ 必须说明更改内容
+### 商业使用许可
+如需商业使用，请联系项目维护者获取单独许可。
