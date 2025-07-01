@@ -86,7 +86,6 @@ body {
     }
 }
 
-/* 动画类 */
 .fade-in {
     animation: fadeIn 0.3s ease-out forwards;
 }
@@ -134,30 +133,24 @@ img.loading {
 }
 
 #chat-container, #settings-panel, .message-content, .welcome-message, .message-avatar, #ai-avatar {
-    /* 移除所有可能导致黑边的边框 */
     border: none !important;
-    /* 使用padding-box裁剪背景，防止背景溢出 */
     background-clip: padding-box !important;
-    /* 使用硬件加速 */
     transform: translateZ(0);
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
 
-/* 修复按钮黑边 */
 button, .icon-button, .primary-button, .secondary-button {
     border: none !important;
     background-clip: padding-box !important;
     transform: translateZ(0);
 }
 
-/* 修复输入框黑边 */
 #chat-input {
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
     background-clip: padding-box !important;
 }
 
-/* 聊天头部 */
 #chat-header {
     display: flex;
     justify-content: space-between;
@@ -174,7 +167,6 @@ button, .icon-button, .primary-button, .secondary-button {
     align-items: center;
 }
 
-/* 头像包装器 */
 .header-avatar {
     width: 40px;
     height: 40px;
@@ -192,15 +184,12 @@ button, .icon-button, .primary-button, .secondary-button {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    /* 防止黑边 */
     border: none !important;
     background-color: transparent;
     box-shadow: none;
-    /* 确保头像不闪烁 */
     transition: opacity 0.3s ease;
 }
 
-/* 添加头像占位符样式 */
 .avatar-placeholder {
     width: 100%;
     height: 100%;
@@ -270,7 +259,6 @@ button, .icon-button, .primary-button, .secondary-button {
     border-radius: 50%;
 }
 
-/* 修改消息头像样式 */
 .avatar-wrapper {
     width: 36px;
     height: 36px;
@@ -289,14 +277,11 @@ button, .icon-button, .primary-button, .secondary-button {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    /* 防止黑边 */
     border: none !important;
     box-shadow: none;
-    /* 确保头像不闪烁 */
     transition: opacity 0.3s ease;
 }
 
-/* 聊天消息区域 */
 #chat-messages {
     flex: 1;
     padding: 20px;
@@ -325,7 +310,6 @@ button, .icon-button, .primary-button, .secondary-button {
     background-color: var(--primary-color);
 }
 
-/* 欢迎消息 */
 .welcome-message {
     display: flex;
     flex-direction: column;
@@ -355,7 +339,6 @@ button, .icon-button, .primary-button, .secondary-button {
     text-align: center;
 }
 
-/* 消息样式 - 修复消息气泡黑边 */
 .message {
     display: flex;
     align-items: flex-start;
@@ -422,7 +405,6 @@ button, .icon-button, .primary-button, .secondary-button {
     margin-top: 5px;
 }
 
-/* 输入区域 */
 #chat-input-area {
     display: flex;
     align-items: center;
@@ -489,7 +471,6 @@ button, .icon-button, .primary-button, .secondary-button {
     transition: transform 0.3s ease;
 }
 
-/* 输入指示器 */
 #typing-indicator {
     display: flex;
     align-items: center;
@@ -519,7 +500,6 @@ button, .icon-button, .primary-button, .secondary-button {
     animation-delay: 0.4s;
 }
 
-/* 状态指示器动画 */
 .status-indicator {
     transition: all 0.3s ease;
 }
@@ -533,7 +513,6 @@ button, .icon-button, .primary-button, .secondary-button {
     to { opacity: 1; }
 }
 
-/* 代码块样式 */
 code {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 2px 4px;
@@ -541,7 +520,6 @@ code {
     font-family: monospace;
 }
 
-/* 强调文本样式 */
 strong {
     font-weight: bold;
     color: var(--primary-color);
@@ -552,7 +530,6 @@ em {
     color: #555;
 }
 
-/* 响应式设计 */
 @media (max-width: 768px) {
     #chat-container {
         width: 95%;
@@ -586,7 +563,6 @@ em {
     }
 } 
 
-/* 按钮样式 */
 .icon-button {
     background-color: transparent;
     border: none;
@@ -611,7 +587,6 @@ em {
     transform: rotate(30deg);
 }
 
-/* 设置面板样式 */
 .settings-buttons {
     display: flex;
     justify-content: space-between;
@@ -704,14 +679,12 @@ body {
     overflow-y: hidden !important;
 }
 
-/* 确保没有滚动条 */
 ::-webkit-scrollbar {
     display: none !important;
     width: 0 !important;
     background: transparent !important;
 }
 
-/* 特殊处理FiveM NUI窗口 */
 @media screen {
     html, body {
         background: transparent !important;
@@ -719,14 +692,12 @@ body {
     }
 }
 
-/* 确保没有任何可能产生黑边的元素 */
 *::before, *::after {
     box-shadow: none !important;
     outline: none !important;
     border-color: transparent !important;
 } 
 
-/* QQ绑定弹窗样式 */
 .modal {
     position: fixed;
     top: 0;
@@ -832,7 +803,6 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 } 
 
-/* 系统消息样式 */
 .system-message {
     justify-content: center;
     margin: 10px 0;
@@ -863,7 +833,6 @@ body {
     color: var(--text-color);
 }
 
-/* 不同类型的系统消息样式 */
 .system-success {
     border-left-color: #4CAF50;
 }

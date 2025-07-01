@@ -173,7 +173,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 removeTypingIndicator();
                 addMessage(false, item.message);
-            }, 1000 + Math.min(item.message.length * 20, 2000)); // 根据消息长度调整延迟
+            }, 1000 + Math.min(item.message.length * 20, 2000));
         } else if (item.type === 'systemMessage') {
             addSystemMessage(item.message, item.messageType);
         }
@@ -326,7 +326,6 @@ function closeChat() {
         document.getElementById('chat-container').classList.remove('fade-out');
         document.getElementById('chat-container').classList.add('hidden');
         
-        // 确保背景完全透明
         document.body.style.backgroundColor = 'transparent';
         document.body.style.backgroundImage = 'none';
         document.documentElement.style.backgroundColor = 'transparent';

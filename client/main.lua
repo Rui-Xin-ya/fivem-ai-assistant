@@ -1,12 +1,11 @@
--- 客户端初始化脚本
 local isProcessingAI = false
 local chatOpen = false
 local aiSettings = {
     aiName = "AI助手",
     aiAvatar = "https://i.imgur.com/YOJjZlW.png",
     userAvatar = "https://i.imgur.com/6MgCm6u.png",
-    aiProvider = "volces", -- 默认使用火山引擎API
-    qqNumber = "" -- QQ号码，用于显示QQ头像
+    aiProvider = "volces",
+    qqNumber = ""
 }
 
 function ShowGameNotification(message, notificationType)
